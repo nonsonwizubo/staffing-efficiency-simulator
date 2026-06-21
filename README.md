@@ -125,7 +125,7 @@ At **100%** Satisfaction, profit is **33%** lower than the maximum due to the ex
 
 NumPy - stochastic modeling, efficient computing
 
-Matplotlib - graphing data
+Matplotlib - data visualization
 
 
 
