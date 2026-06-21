@@ -121,7 +121,7 @@ Although through a deeper analysis of the data using the table, I found that at 
 
 At **100%** Satisfaction, profit is **33%** lower than the maximum due to the excessive labor cost required to reach that final **13%** of customer satisfaction.
 
-**So based on these findings, I would recommend staffing 5 employees. This balances max profit and high customer satisfaction while avoiding the point of diminishing returns that occurs beynod 5 employees.**
+**So based on these findings, I would recommend staffing 5-6 employees. This balances max profit and relatively high customer satisfaction while avoiding the point of diminishing returns that occurs beynod this number of employees employees.**
 
 
 ## Python Libraries Used
