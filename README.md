@@ -86,7 +86,7 @@ Visually looking at the graph, it looks like beyond 6 employees, profit begins t
 
 At the point of maximum profit, customer satisfaction is around 90%. Beyond this, the trade-off between labor cost and satisfaction scores becomes clear.
 
-### 3. Customer Satisfaction vs Staffling Levels
+### 3. Customer Satisfaction vs Staffing Levels
 *As number of employees increases, customer satisfaction increases exponentially.*
 
 ![Wait Time Analysis](graphs/satisfaction_vs_employees_graph.png)
