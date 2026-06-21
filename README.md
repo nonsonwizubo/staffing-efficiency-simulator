@@ -70,9 +70,9 @@ for employees in range (1,21):
 ```
 
 ## Findings
-Through simulation I found that at 20 employees there was no wait time, and satisfaction was 100%, meaning maximum revenue had been acheived.
+Through simulation I found that at 20 employees there was no wait time, and customer satisfaction and retention was at 100%, meaning maximum revenue had been acheived.
 
-Adding more employees than this would be pointless as it would result in losses due to uneeded labor cost.
+Adding more employees than this would be wasteful as it would result in losses due to uneeded labor cost with no marginal revenue gain.
 
 ### 1. Staffing vs. Profitability
 *This graph shows the point of diminishing returns where labor costs begin to outweigh profit.*
