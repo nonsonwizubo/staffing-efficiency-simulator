@@ -15,7 +15,7 @@ Built as a learning project to develop skills in python, stochastic modeling, an
 
 ## Method
 ### 1. Simulating Customer Arrivals
-In order to simulate the arrival of customers, it was assumed that for each minute, there was a 0.2 probability that a customer would arrive at any minute. 
+In order to simulate the arrival of customers, it was assumed that for each minute, there was a 0.2 probability that a customer would arrive. 
 
 This probability was simulated for 175200 minutes(time open yearly in minutes).
 ```python
