@@ -1,8 +1,8 @@
 # Stochastic Resource Allocation Model 
 
-Stochastic simulation built with Python to identify the trade-offs between profit, labor costs, wait times, and customer satisfaction allowing data-driven decision making to find optimal staffing levels.
+A Stochastic simulation built with Python to analyze the trade-offs between profit, labor costs, wait times, and customer satisfaction allowing data-driven decision making to find optimal staffing levels.
 
-Built as a learning project to practice python, stochastic modeling, and data analysis.
+Built as a learning project to develop skills in python, stochastic modeling, and data analysis.
 
 ## Assumptions
 
@@ -111,7 +111,7 @@ Through  this table, It shows max profit actually occurs at 5 employees
 
 ## Conclusion
 
-Through visualization of the three graphs it appeared that at **6** employees, profit maximized at around **90%** satisfaction.
+Through visualization of the three graphs it appeared that at **6** employees, profit maximized with around **90%** satisfaction.
 
 Although through a deeper analysis of the data using the table, I found that at for each added employee after the 5th, marginal labor cost began to outweigh marginal revenue. Meaning that the maximum profit actaully occured at **5** employees.
 
