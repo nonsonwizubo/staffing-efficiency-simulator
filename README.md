@@ -122,7 +122,7 @@ At **100%** Satisfaction, profit is **33%** lower than the maximum due to the ex
 **So based on these findings, I would recommend staffing 5 employees. This balances max profit and high customer satisfaction while avoiding the point of diminishing returns that occurs beynod 5 employees.**
 
 
-## Libraries Used
+## Python Libraries Used
 
 NumPy - stochastic modeling, efficient computing
 
