@@ -1,4 +1,4 @@
-# Staffing Optimization Simulator
+# Stochastic Resource Allocation Model 
 
 Stochastic simulation built with Python to identify the trade-offs between profit, labor costs, wait times, and customer satisfaction allowing data-driven decision making to find optimal staffing levels.
 
