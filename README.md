@@ -33,7 +33,7 @@ This script creates a line for customers that aren't currently being served. Thi
         wait_time = (line / capacity)                   
 ```
 ### 3. Simulating Customer Satisfaction and Retention Rate
-To calculate customer satisfaction and rentention, an exponential decay function was used to calculate the relationship between wait times and service quality. 
+To calculate customer satisfaction and rentention, an exponential decay function was used to calculate the relationship between wait times and customer satisfaction. 
 
 The longer a customer waited, satisfaction and retention scores would decrease exponentially.
 
