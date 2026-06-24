@@ -5,25 +5,25 @@ import numpy as np
 
 # simulation of service
 def formula(employees):  
-    potential_customers = np.random.binomial(n=175200, p=0.2)      # 175200 = minutes in a year, 0.2 =  probability that a customer arrives in one of those minutes  
+    potential_customers = np.random.binomial(n=175200, p=0.2)     
 
-    capacity = (employees * 5) * 365                  # number of customers that a given number of employees can serve without queues
-    line = max(0, potential_customers - capacity)      # line that forms if there are more customers than employees can serve ('max(0' makes sure line can not be negative)
+    capacity = (employees * 5) * 365                 
+    line = max(0, potential_customers - capacity)    
     if capacity > 0:
         wait_time = (line / capacity)                   
-    else:                                              # if we were to simulate zero employees this would ensure code doesnt break
+    else:                                             
         wait_time = 60
  
     k = 0.05 # impatience factor
-    satisfaction = 100 * math.exp(-k * wait_time)  # as wait get longer satisfaction gets lower (starts at 100 percent)
-    customer_retention = math.exp(-k * wait_time)  # as wait gets longer customers leave
+    satisfaction = 100 * math.exp(-k * wait_time)  
+    customer_retention = math.exp(-k * wait_time)  
 
-    actual_customers = potential_customers * customer_retention     # number of custoemrs that actually stay  to make a purchase
+    actual_customers = potential_customers * customer_retention    
 
-    revenue = actual_customers * 50                        # assuming each customer spends $50
-    daily_wage = 15 * 8                                    # each employee is payed $15 per hour for a workday of 8 hours
-    payroll_cost = (employees * daily_wage) * 365          # payroll cost over a year
-    profit = revenue - payroll_cost                        #profit over a year
+    revenue = actual_customers * 50                        
+    daily_wage = 15 * 8                                    
+    payroll_cost = (employees * daily_wage) * 365          
+    profit = revenue - payroll_cost                      
     
     return wait_time, revenue, payroll_cost, profit, satisfaction
 
@@ -35,24 +35,24 @@ for employees in range(1, 21):
 
 
 
-employees_list = [] #                           -
-profits_list = [] #                              |---- metrics that will indicate success based on company goals:
-satisfaction_list = [] #                        -
+employees_list = [] #                          
+profits_list = [] #                            
+satisfaction_list = [] #                      
 
 
 #monte carlo averaging:
 for employees in range (1,21):
-    runtimes = 10000             # simulating results for each employee 10,000 times to create more accurate data
+    runtimes = 10000            
     sum_profit = 0
     sum_satisfaction = 0
 
     for x in range(runtimes):
-        wait_time, revenue, payroll_cost, profit,satisfaction = formula(employees)  # had to call for all 5 values or else there was a error
+        wait_time, revenue, payroll_cost, profit,satisfaction = formula(employees)  
         sum_profit += profit
         sum_satisfaction += satisfaction
 
-    avg_profit = sum_profit / runtimes                          # averaging the 10,000 profit results for each number of employees
-    avg_satisfaction = sum_satisfaction / runtimes                       # averaging the 10,000 satisfaction results for each number of employees
+    avg_profit = sum_profit / runtimes                         
+    avg_satisfaction = sum_satisfaction / runtimes                       
 
     employees_list.append(employees)
     profits_list.append(avg_profit)
